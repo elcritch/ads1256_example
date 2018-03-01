@@ -18,3 +18,5 @@ erl_crash.dump
 
 *.o
 *_test
+*.a
+.deps/

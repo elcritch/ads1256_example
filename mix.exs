@@ -9,6 +9,7 @@ defmodule Rpi3Example.MixProject do
       version: "0.1.0",
       elixir: "~> 1.4",
       target: @target,
+      compilers: [:elixir_make] ++ Mix.compilers,
       archives: [nerves_bootstrap: "~> 1.0-rc"],
       deps_path: "deps/#{@target}",
       build_path: "_build/#{@target}",
@@ -47,7 +48,7 @@ defmodule Rpi3Example.MixProject do
     [
       {:nerves, "~> 1.0-rc", runtime: false},
       {:elixir_ale, "~> 1.0", },
-      {:elixir_make, "~> 1.0", },
+      {:elixir_make, "~> 0.4", },
 
     ] ++ deps(@target)
   end
