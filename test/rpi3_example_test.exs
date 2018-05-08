@@ -1,6 +1,6 @@
-defmodule Rpi3ExampleTest do
+defmodule Ads1256ExampleTest do
   use ExUnit.Case
-  doctest Rpi3Example
+  doctest Ads1256Example
 
   test "the truth" do
     assert 1 + 1 == 2

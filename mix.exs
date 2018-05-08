@@ -1,4 +1,4 @@
-defmodule Rpi3Example.MixProject do
+defmodule Ads1256Example.MixProject do
   use Mix.Project
 
   @target System.get_env("MIX_TARGET") || "host"
@@ -34,13 +34,13 @@ defmodule Rpi3Example.MixProject do
   # Specify target specific application configurations
   # It is common that the application start function will start and supervise
   # applications which could cause the host to fail. Because of this, we only
-  # invoke Rpi3Example.start/2 when running on a target.
+  # invoke Ads1256Example.start/2 when running on a target.
   def application("host") do
     [extra_applications: [:logger]]
   end
 
   def application(_target) do
-    [mod: {Rpi3Example.Application, []}, extra_applications: [:logger]]
+    [mod: {Ads1256Example.Application, []}, extra_applications: [:logger]]
   end
 
   # Run "mix help deps" to learn about dependencies.
