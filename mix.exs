@@ -46,7 +46,7 @@ defmodule Rpi3Example.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nerves, "~> 1.0-rc.1", runtime: false},
+      {:nerves, "~> 1.0", runtime: false},
       {:elixir_ale, "~> 1.0", },
       {:elixir_make, "~> 0.4", },
 
